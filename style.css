@@ -1,0 +1,336 @@
+body {
+     font-family: Arial, sans-serif;
+     background-color: #1a202c;
+}
+
+#video, #canvas {
+     width: 640px;
+     height: 480px;
+}
+
+#canvas {
+     pointer-events: none;
+}
+
+#error {
+     padding: 10px 20px;
+     border-radius: 8px;
+     text-align: center;
+     animation: slideIn 0.5s ease;
+}
+
+#error.hidden {
+     display: none;
+}
+
+#error.bg-red-400 {
+     background-color: #f87171;
+}
+
+#error.bg-green-600 {
+     background-color: #059669;
+}
+
+@keyframes slideIn {
+     from {
+          transform: translateY(-20px);
+          opacity: 0;
+     }
+
+     to {
+          transform: translateY(0);
+          opacity: 1;
+     }
+}
+
+input, button, select {
+     transition: all 0.3s ease;
+}
+
+button:hover {
+     transform: scale(1.05);
+}
+
+select {
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     background: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 0.75rem center/16px 16px;
+}
+
+.bg-gray-700 {
+     background-color: #4a5568;
+}
+
+.bg-gray-800 {
+     background-color: #2d3748;
+}
+
+.bg-blue-600 {
+     background-color: #2563eb;
+}
+
+.bg-blue-700 {
+     background-color: #1d4ed8;
+}
+
+.bg-green-600 {
+     background-color: #059669;
+}
+
+.bg-green-700 {
+     background-color: #047857;
+}
+
+.bg-red-600 {
+     background-color: #dc2626;
+}
+
+.bg-red-700 {
+     background-color: #b91c1c;
+}
+
+.text-white {
+     color: #ffffff;
+}
+
+.rounded {
+     border-radius: 0.5rem;
+}
+
+.p-2 {
+     padding: 0.5rem;
+}
+
+.px-4 {
+     padding-left: 1rem;
+     padding-right: 1rem;
+}
+
+.py-2 {
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+}
+
+.mb-4 {
+     margin-bottom: 1rem;
+}
+
+.mt-4 {
+     margin-top: 1rem;
+}
+
+.w-full {
+     width: 100%;
+}
+
+
+.grass {
+     width: 200px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+}
+
+.text-3xl {
+     text-align: center;
+     font-size: 40px;
+     font-weight: bold;
+     animation-name: names;
+     animation-duration: 4s;
+     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-iteration-count: infinite;
+     color: transparent;
+}
+
+.text-2xl {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+     text-align: center;
+
+     font-weight: bold;
+
+     animation-name: names1;
+     animation-duration: 2s;
+     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-iteration-count: infinite;
+     color: transparent;
+
+}
+
+
+
+.mb-8 {
+     color: red;
+}
+
+.merter-1 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     justify-items: center;
+
+}
+
+.remer-1 {
+     display: flex;
+     flex-direction: column;
+     padding-top: 15px;
+}
+
+
+
+
+
+@keyframes names {
+     0% {
+          background: linear-gradient(to right, rgb(255, 221, 0), rgb(142, 97, 14), rgb(0, 255, 191), green, blue, rgb(223, 3, 3), rgb(235, 4, 235));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     25% {
+          background: linear-gradient(to right, rgb(88, 86, 69), rgb(2, 2, 240), rgb(255, 0, 0), green, blue, rgb(4, 238, 97), rgb(116, 3, 3));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     50% {
+          background: linear-gradient(to right, rgb(78, 76, 64), rgb(0, 149, 125), rgb(255, 0, 234), green, rgb(17, 17, 115), rgb(20, 1, 105), rgb(102, 21, 102));
+
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     75% {
+          background: linear-gradient(to right, rgb(114, 106, 59), rgb(255, 0, 25), rgb(0, 255, 191), green, blue, rgb(175, 4, 175), rgb(4, 200, 235));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     100% {
+          background: linear-gradient(to right, rgb(255, 221, 0), rgb(142, 97, 14), rgb(0, 255, 191), green, blue, rgb(223, 3, 3), rgb(235, 4, 235));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+}
+
+@keyframes names1 {
+     0% {
+          background: linear-gradient(to right, rgb(255, 221, 0), rgb(142, 97, 14), rgb(0, 255, 191), green, blue, rgb(223, 3, 3), rgb(235, 4, 235));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     25% {
+          background: linear-gradient(to right, rgb(88, 86, 69), rgb(2, 2, 240), rgb(255, 0, 0), green, blue, rgb(4, 238, 97), rgb(116, 3, 3));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     50% {
+          background: linear-gradient(to right, rgb(78, 76, 64), rgb(0, 149, 125), rgb(255, 0, 234), green, rgb(17, 17, 115), rgb(20, 1, 105), rgb(102, 21, 102));
+
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     75% {
+          background: linear-gradient(to right, rgb(114, 106, 59), rgb(255, 0, 25), rgb(0, 255, 191), green, blue, rgb(175, 4, 175), rgb(4, 200, 235));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+
+     100% {
+          background: linear-gradient(to right, rgb(255, 221, 0), rgb(142, 97, 14), rgb(0, 255, 191), green, blue, rgb(223, 3, 3), rgb(235, 4, 235));
+          -webkit-background-clip: text;
+          color: transparent;
+     }
+}
+
+
+@keyframes identifier {
+     10% {
+          scale: 0.1;
+          transition-duration: 4s;
+          transform: rotateX('angle');
+          transform: rotateY('angle');
+
+     }
+
+     35% {
+          scale: 0.1;
+          transition-duration: 4s;
+          transform: rotateX('angle');
+          transform: rotateY('angle');
+
+     }
+
+     55% {
+          scale: 0.1;
+          transition-duration: 4s;
+          transform: rotateX('angle');
+          transform: rotateY('angle');
+
+     }
+
+     80% {
+          scale: 0.1;
+          transition-duration: 4s;
+          transform: rotateX('angle');
+          transform: rotateY('angle');
+
+     }
+
+     100% {
+          scale: 0.1;
+          transition-duration: 4s;
+          transform: rotateX('angle');
+          transform: rotateY('angle');
+
+     }
+
+
+
+}
+
+.got {
+     background-color: #617267;
+
+}
+
+.slas {
+     color: #1d4ed8;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.kadr-12 {
+     display: flex;
+     justify-content: end;
+     align-items: end;
+
+}
+
+.lal {
+     text-decoration: none;
+     background-color: #9092b0;
+     color: #f00000;
+
+}
+
+
+
+select {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+
+}

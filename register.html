@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Kayıt Ol - Yüz Tanıma</title>
+          <link rel="stylesheet" href="style.css">
+     </head>
+     <body>
+
+          <div
+               class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md medli got">
+               <h1 class="text-2xl font-bold mb-6 text-center">Kayıt
+                    Ol</h1>
+               <div class="merter-1 slas">
+                    <div id="error" class="hidden mb-4 p-2 rounded"></div>
+                    <input id="registerUsername" type="text"
+                         placeholder="Kullanıcı Adı"
+                         class="w-full p-2 mb-4 bg-gray-700 rounded">
+                    <input id="registerPassword" type="password"
+                         placeholder="Şifre"
+                         class="w-full p-2 mb-4 bg-gray-700 rounded">
+                    <button id="registerButton"
+                         class="w-full p-2 bg-blue-600 rounded hover:bg-blue-700 transition-all">Kayıt
+                         Ol</button>
+                    <button id="showLoginButton"
+                         class="w-full p-2 mt-2 bg-gray-600 rounded hover:bg-gray-700 transition-all">Giriş
+                         Yap</button>
+               </div>
+
+               <div class="kadr-12">
+                    <div>
+                         <button type="button" id="showLoginButton"
+                              class="w-full p-2 mt-2 bg-gray-600 rounded hover:bg-gray-700 transition-all lal"><span><a
+                                        style="text-decoration: none;"
+                                        href="https://github.com/kadribabur/hediye">help</a></span></button>
+                    </div>
+               </div>
+          </div>
+
+          <script src="/script.js"></script>
+     </body>
+</html>
